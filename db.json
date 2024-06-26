@@ -2,20 +2,171 @@
   "tasks": [
     {
       "id": "1",
-      "text": "Doctors Appointment",
+      "message": "Doctors Appointment",
       "day": "March 5th at 2:30pm",
       "reminder": true
     },
     {
       "id": "2",
-      "text": "Meeting with boss",
+      "message": "Meeting with boss",
       "day": "March 6th at 1:30pm",
       "reminder": true
     },
     {
       "id": "3",
-      "text": "Food shopping",
+      "message": "Food shopping",
       "day": "March 7th at 2:00pm",
+      "reminder": true
+    },
+    {
+      "id": "1295",
+      "message": "asdf",
+      "day": "asdf",
+      "reminder": true
+    },
+    {
+      "id": "8b5c",
+      "message": "qwerty",
+      "day": "qwert",
+      "reminder": true
+    },
+    {
+      "id": "2f9b",
+      "message": "1234",
+      "day": "1234",
+      "reminder": true
+    },
+    {
+      "id": "d8d6",
+      "message": "a",
+      "day": "a",
+      "reminder": true
+    },
+    {
+      "id": "7c46",
+      "message": "b",
+      "day": "b",
+      "reminder": true
+    },
+    {
+      "id": "31c4",
+      "message": "c",
+      "day": "c",
+      "reminder": true,
+      "showAddTask": false
+    },
+    {
+      "id": "ca8a",
+      "message": "d",
+      "day": "d",
+      "reminder": true
+    },
+    {
+      "id": "d204",
+      "message": "e",
+      "day": "e",
+      "reminder": true
+    },
+    {
+      "id": "119f",
+      "message": "f",
+      "day": "f",
+      "reminder": true
+    },
+    {
+      "id": "68a4",
+      "message": "g",
+      "day": "g",
+      "reminder": true
+    },
+    {
+      "id": "c674",
+      "message": "h",
+      "day": "h",
+      "reminder": true
+    },
+    {
+      "id": "84b7",
+      "message": "i",
+      "day": "i",
+      "reminder": true
+    },
+    {
+      "id": "03aa",
+      "message": "j",
+      "day": "j",
+      "reminder": true
+    },
+    {
+      "id": "2ea0",
+      "message": "k",
+      "day": "k",
+      "reminder": true
+    },
+    {
+      "id": "fb43",
+      "message": "l",
+      "day": "l",
+      "reminder": true
+    },
+    {
+      "id": "e6d6",
+      "message": "m",
+      "day": "m",
+      "reminder": true
+    },
+    {
+      "id": "376b",
+      "message": "n",
+      "day": "n",
+      "reminder": true
+    },
+    {
+      "id": "3022",
+      "message": "o",
+      "day": "o",
+      "reminder": true
+    },
+    {
+      "id": "e969",
+      "message": "p",
+      "day": "p",
+      "reminder": true
+    },
+    {
+      "id": "bf9b",
+      "message": "q",
+      "day": "q",
+      "reminder": true
+    },
+    {
+      "id": "937c",
+      "message": "r",
+      "day": "r",
+      "reminder": true
+    },
+    {
+      "id": "dfa1",
+      "message": "s",
+      "day": "s",
+      "reminder": true
+    },
+    {
+      "id": "0583",
+      "message": "t",
+      "day": "t",
+      "reminder": true
+    },
+    {
+      "id": "00a6",
+      "message": "u",
+      "day": "u",
+      "reminder": true
+    },
+    {
+      "id": "c2cc",
+      "message": "v",
+      "day": "v",
       "reminder": true
     }
   ]

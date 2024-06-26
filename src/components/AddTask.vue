@@ -1,23 +1,29 @@
+<script setup>
+import { ref } from 'vue';
+import InputField from './InputField';
+let message = ref('');
+let day = ref('');
+</script>
 <template>
   <form @submit="onSubmit" class="add-form">
-    <div class="form-control">
-      <label>Task</label>
-      <input type="text" v-model="text" name="text" placeholder="Add Task" />
-    </div>
-    <div class="form-control">
-      <label>Day & Time</label>
-      <input
-        type="text"
-        v-model="day"
-        name="day"
-        placeholder="Add Day & Time"
-      />
-    </div>
+    <InputField
+      name="message"
+      label="Task"
+      placeholder="Add Task"
+      v-model="message"
+    />
+    <InputField
+      name="day"
+      label="Day & Time"
+      placeholder="Add Day & Time"
+      v-model="day"
+    />
     <div class="form-control form-control-check">
       <label>Set Reminder</label>
       <input type="checkbox" v-model="reminder" name="reminder" />
     </div>
-
+    <div>Task: {{ message }}</div>
+    <div>Day: {{ day }}</div>
     <input type="submit" value="Save Task" class="btn btn-block" />
   </form>
 </template>
@@ -27,29 +33,38 @@ export default {
   name: 'AddTask',
   data() {
     return {
-      text: '',
+      message: '',
       day: '',
       reminder: false,
     };
   },
+  components: {
+    InputField,
+  },
   methods: {
     onSubmit(e) {
       e.preventDefault();
-      if (!this.text) {
+
+      if (!message.value) {
         alert('Please add a task');
+        return;
+      }
+      if (!day.value) {
+        alert('Please add the date and time');
         return;
       }
       const newTask = {
         // id: Math.floor(Math.random() * 100000),
-        text: this.text,
-        day: this.day,
+        message: message.value,
+        day: day.value,
         reminder: this.reminder,
       };
 
       this.$emit('add-task', newTask);
-      this.text = '';
-      this.day = '';
+      message.value = '';
+      day.value = '';
       this.reminder = false;
+      this.$emit('toggle-add-task');
     },
   },
 };
